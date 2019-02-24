@@ -22,7 +22,7 @@
     <meta name="description" content="My blog">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>奇奇怪怪 · Reta&#39;s blog</title>
+    <title>我的第一篇博客 · Reta&#39;s blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -194,6 +194,21 @@
     <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin="">
     <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin="">
     
+        <!-- algolia -->
+        <script>
+            
+            var hits = JSON.parse('{"per_page":10}')
+            var labels = JSON.parse('{"input_placeholder":"Search for Posts","hits_empty":"We did not find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}')
+
+            var algolia = {
+                applicationID: 'RHX8OPGTJM',
+                apiKey: '194d13a408a46ec7ad814c08787489fc',
+                indexName: 'blog',
+                hits: hits,
+                labels: labels
+            }
+        </script>
+    
     <!-- fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
     <!-- 百度统计  -->
@@ -217,7 +232,7 @@
                 <a href="/">Reta&#39;s blog</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">奇奇怪怪</a>
+                <a href="#" class="post-name">我的第一篇博客</a>
             </div>
     </div>
     
@@ -247,7 +262,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            奇奇怪怪
+            我的第一篇博客
             <!-- 404 -->
             
         </h1>
@@ -264,14 +279,22 @@ height:50vh;
             <div class="post-intros">
                 <!-- 文章页标签  -->
                 
+                    <div class="post-intro-tags">
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="胡说八道">胡说八道</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="生活">生活</a>
+    
+</div>
+                
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">10</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">111</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/01/19</span>
+                    <span class="post-intro-time">2019/02/24</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -395,16 +418,17 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>就是想测试一下而已ww</p>
+        <h2 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h2><p>   说来也算意料之外，看到机房里的巨佬们都创立了自己的博客，我不免有些眼红。<br>于是自己瞎折腾了挺久，终于是建立成功了。不得不说，这东西确实挺耗时的。但成<br>功的那一瞬间还是觉得成就感爆棚。</p>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>   以后会在这记录我的生活，oi，以及常有的胡说八道（我废话很多）。</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://retaqwq.github.io">Reta</a>
-            </p><p>原文链接：<a href="http://retaqwq.github.io/2019/01/19/奇奇怪怪/">http://retaqwq.github.io/2019/01/19/奇奇怪怪/</a>
-            </p><p>发表日期：<a href="http://retaqwq.github.io/2019/01/19/奇奇怪怪/">January 19th 2019, 4:33:28 pm</a>
-            </p><p>更新日期：<a href="http://retaqwq.github.io/2019/01/19/奇奇怪怪/">January 19th 2019, 4:35:02 pm</a>
+            </p><p>原文链接：<a href="http://retaqwq.github.io/2019/02/24/我的第一篇博客/">http://retaqwq.github.io/2019/02/24/我的第一篇博客/</a>
+            </p><p>发表日期：<a href="http://retaqwq.github.io/2019/02/24/我的第一篇博客/">February 24th 2019, 3:56:38 pm</a>
+            </p><p>更新日期：<a href="http://retaqwq.github.io/2019/02/24/我的第一篇博客/">February 24th 2019, 4:02:06 pm</a>
             </p><p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -416,8 +440,8 @@ height:50vh;
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href="/2019/01/06/test-my-site/" title="test_my_site">
-                    <div class="prevTitle">test_my_site</div>
+                <a href="/2019/01/05/hello-world/" title="Hello World">
+                    <div class="prevTitle">Hello World</div>
                 </a>
             
         </li>
@@ -555,7 +579,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#起源"><span class="toc-number">1.</span> <span class="toc-text">起源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#作用"><span class="toc-number">2.</span> <span class="toc-text">作用</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -586,20 +610,15 @@ top:50vh;
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 2
         </div>
         <!-- search  -->
+        
+            <div class="site-search popup-trigger">
+                <span class="iconfont-archer search-icon">&#xe627;</span>
+            </div>
         
     </div>
     
@@ -613,12 +632,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">01/19</span><a class="archive-post-title" href="/2019/01/19/奇奇怪怪/">奇奇怪怪</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">01/06</span><a class="archive-post-title" href="/2019/01/06/test-my-site/">test_my_site</a>
+            <span class="archive-post-date">02/24</span><a class="archive-post-title" href="/2019/02/24/我的第一篇博客/">我的第一篇博客</a>
         </li>
     
     
@@ -630,6 +644,10 @@ top:50vh;
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="胡说八道"><span class="iconfont-archer">&#xe606;</span>胡说八道</span>
+    
+        <span class="sidebar-tag-name" data-tags="生活"><span class="iconfont-archer">&#xe606;</span>生活</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -664,6 +682,8 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="日常"><span class="iconfont-archer">&#xe60a;</span>日常</span>
+    
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
     <div class="sidebar-categories-list"></div>
@@ -687,6 +707,29 @@ jsonContent:
     </script>
     <script src="/scripts/main.js"></script>
     <!-- algolia -->
+    
+        <div class="site-search">
+  <div class="algolia-popup popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="iconfont-archer">&#xe609;</i>
+    </span>
+  </div>
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js" defer></script>
+        <script src="/scripts/search.js" defer></script>
     
     <!-- busuanzi  -->
     
